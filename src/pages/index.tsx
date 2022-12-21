@@ -16,46 +16,11 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div className="row">
-        <span className="logos">
-          <a href="https://nextjs.org" target="_blank" rel="noopener">
-            <Image
-              width={144}
-              height={144}
-              src={nextLogo}
-              className="logo next"
-              alt="Next logo"
-            />
-          </a>
-        </span>
-        <span className="logos">
-          <a href="https://tauri.app" target="_blank" rel="noopener">
-            <Image
-              width={144}
-              height={144}
-              src={tauriLogo}
-              className="logo tauri"
-              alt="Tauri logo"
-            />
-          </a>
-        </span>
-        <span className="logos">
-          <a href="https://reactjs.org" target="_blank" rel="noopener">
-            <Image
-              width={144}
-              height={144}
-              src={reactLogo}
-              className="logo react"
-              alt="React logo"
-            />
-          </a>
-        </span>
-      </div>
-
-      <p>Click on the Tauri, Next, and React logos to learn more.</p>
-
+      <h1>This is the homepage</h1>
+      <h2>
+        This will be where we can have all of the buttons to different features,
+        etc
+      </h2>
       <div className="row">
         <div>
           <input
@@ -70,6 +35,12 @@ function App() {
       </div>
 
       <p>{greetMsg}</p>
+      <h3>Click the bottom link to travel to our second page!</h3>
+      <div className="row">
+        <a href="/second">
+          <button type="button">Travel To Second Page</button>
+        </a>
+      </div>
     </div>
   );
 }
